@@ -50,8 +50,8 @@ export const goToTab = (tab) => (
       dispatch(checkIfNextTabReady(tab));
       const state = getState();
 
-      if((state.nextTab === tab && state.nextTabReady) ||
-        state.priorTab === tab)
+      if((state.nextTabReady) ||
+        tab === 'teams')
       {
         if (tab === 'result') {
           dispatch(attemptTrade());

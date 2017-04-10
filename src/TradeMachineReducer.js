@@ -56,9 +56,11 @@ const tradeMachineReducer = (state = initialState, action) => {
       return stateChanges;
     case types.CHECK_IF_NEXT_TAB_READY: {
       let nextTabReady;
-      let errorMessage = null;
+      let errorMessage;
 
-      if (state.nextTab === 'players' || action.tab === 'teams') {
+      if (action.tab === 'teams') {
+        errorMessage = null;
+      } else if (state.nextTab === 'players') {
         nextTabReady = !!state.team1 && !!state.team2;
 
         if (!nextTabReady) {
