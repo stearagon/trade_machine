@@ -18,7 +18,6 @@ const mapStateToProps = (state) => {
 
   return {
     tradeSuccessful: state.tradeSuccessful,
-    tradeAttempted: state.tradeAttempted,
     team1TradePlayers: state.team1TradePlayers,
     team2TradePlayers: state.team2TradePlayers,
     team1TotalSalary: team1TotalSalary,

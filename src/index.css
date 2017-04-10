@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Helvetica Neue", Helveitca, arial, sans-serif; }
+  font-family: "Helvetica Neue", Helvetica, arial, sans-serif; }
 
 .group:after {
   content: "";

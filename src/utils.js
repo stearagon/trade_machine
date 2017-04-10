@@ -61,6 +61,8 @@ export const teams = [
   { label: "Washington Wizards", value: "Washington Wizards"},
 ];
 
+// the following code is used to generate 12 players for each nba team
+// using chance to generate random names, salaries, etc
 export const allPlayers = {};
 
 teams.forEach((team) => {

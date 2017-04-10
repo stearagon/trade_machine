@@ -25,7 +25,6 @@ const initialState = {
   priorTabLabel: null,
   teams: teams,
   allPlayers: allPlayers,
-  tradeAttempted: false,
   tradeSuccessful: false,
   errorMessage: null,
 };
@@ -144,12 +143,11 @@ const tradeMachineReducer = (state = initialState, action) => {
       const team2ContractsValue = calculateContractsValue(state.team2TradePlayers)
       const minValue = Math.min(team1ContractsValue, team2ContractsValue);
       const maxValue = Math.max(team1ContractsValue, team2ContractsValue);
-      const tradeSuccessful = 1.5 * minValue > maxValue;
+      const tradeSuccessful = 1.5 * minValue >= maxValue;
 
       return {
         ...state,
         tradeSuccessful,
-        tradeAttempted: true,
       };
     }
     case types.SORT_PLAYERS: {
