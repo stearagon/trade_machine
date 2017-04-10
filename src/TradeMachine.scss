@@ -1,7 +1,67 @@
-.trade-machine{
-  text-align: center;
+$header-height: 38px;
 
-  &_header {
-    font-size: 12px;
+.trade-machine {
+  min-height: 100vh;
+  background: #e5e5e5;
+}
+
+.trade-machine-header {
+  background: #191919;
+  padding: 10px;
+  -webkit-box-shadow: 0px 3px 11px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 3px 11px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 3px 11px 0px rgba(0,0,0,0.75);
+
+  &_title {
+    color: #ccc;
+    float: left;
+    font-size: 32px;
+    font-weight: 300;
+    height: 38px;
+    text-decoration: none;
   }
+
+  > button {
+    background: #515151;
+    float: right;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: inherit;
+    border: none;
+    border-radius: 3px;
+    font-size: 14px;
+    padding: 10px;
+    color: #ccc;
+  }
+}
+
+.trade-machine-controls {
+  position: relative;
+
+  &_left, &_right {
+    background: #e0e0e0;
+    border-radius: 3px;
+    color: black;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 300;
+    padding: 10px;
+    position: absolute;
+    top: 20px;
+    -webkit-box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.75);
+  }
+
+  &_left {
+    left: 20px;
+  }
+
+  &_right {
+    right: 20px;
+  }
+}
+
+.trade-machine-body {
+  padding: 0 20px;
 }

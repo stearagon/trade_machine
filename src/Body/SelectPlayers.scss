@@ -1,0 +1,21 @@
+.trade-machine-body-select-players {
+  > h1 {
+    text-align: center;
+    font-size: 26px;
+    font-weight: normal;
+    margin-top: 20px;
+    line-height: 40px;
+  }
+
+  &_teams {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  > p {
+    margin-top: none;
+    padding-bottom: 20px;
+    text-align: center;
+    color: #7f0000;
+  }
+}

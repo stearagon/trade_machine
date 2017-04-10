@@ -1,0 +1,137 @@
+.trade-machine-body-select-players {
+  &_team {
+    > h1 {
+      font-size: 24px;
+      font-weight: 300;
+      margin: 0 0 20px;
+      text-align: center;
+    }
+
+    > p {
+      margin-top: none;
+      color: #7f0000;
+      height: 10px;
+      width: 100%;
+    }
+  }
+
+  &_list-label {
+    color: #3d3d3d;
+    font-size: 20px;
+    font-weight: normal;
+    margin: 0;
+    width: 500px;
+  }
+
+  &_list, &_trade-list {
+    border-radius: 1%;
+    list-style: none;
+    padding-left: 0;
+    height: 160px;
+    margin-top: 0;
+    border: 1px solid #8e8e8e;
+    border-top: 1px solid #8e8e8e;
+    overflow: scroll;
+    width: 500px;
+    background: #e5e5e5;
+    position: relative;
+  }
+
+  &_list-item, &_trade-list-item {
+    padding: 5px 10px;
+    border-bottom: 1px solid #8e8e8e;
+    background: #fff;
+
+    &--header {
+      background: none !important;
+      border-bottom: 0;
+      padding-bottom: 5px;
+
+      > span {
+        cursor: pointer;
+        font-weight: 600;
+      }
+    }
+
+    &:nth-child(odd) {
+      background: #d1d1d1;
+    }
+
+    span:nth-child(2) {
+      display: inline-block;
+      width:10%;
+    }
+
+    span:nth-child(3) {
+      display: inline-block;
+      width: 25%;
+    }
+
+    &:last-child {
+      border: none;
+    }
+
+    > span {
+      line-height: 20px;
+      vertical-align: middle;
+
+      i {
+        margin-left: 5px;
+      }
+    }
+
+    > button {
+      background: radial-gradient( 5px -9px, circle, #ccc 1%, #004c00 26px);
+      color: #fff;
+      display: inline-block;
+      float: right;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      line-height: 16px;
+      width: 20px;
+      height: 20px;
+    }
+
+    > span:first-child {
+      display: inline-block;
+      font-weight: 500;
+      width: 30%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    img, span {
+      margin-right: 10px;
+    }
+
+    span:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &_trade-list-item {
+    > button {
+      background: radial-gradient( 5px -9px, circle, #ccc 1%, #7f0000 26px) !important;
+    }
+  }
+
+  &_trade-list {
+    height: 120px;
+    margin-bottom: 10px;
+  }
+
+  &_notice {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &_total-salary {
+    font-size: 20px;
+    margin-top: 10px;
+    padding-bottom: 10px;
+  }
+}

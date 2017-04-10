@@ -1,0 +1,50 @@
+.trade-machine-body-result {
+  > h1 {
+    text-align: center;
+    font-size: 26px;
+    font-weight: normal;
+    margin-top: 20px;
+    line-height: 40px;
+
+    p {
+      font-size: 18px;
+      font-weight: 300;
+    }
+  }
+
+  &_players {
+    display: inline-flex;
+    justify-content: space-around;
+    width: 100%;
+
+  h1 {
+    font-size: 24px;
+    font-weight: 300;
+  }
+
+    > div {
+      display: inline-block;
+    }
+  }
+
+  &_actions {
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+
+    > button {
+      background: #eaeaea;
+      border: none;
+      border-radius: 3px;
+      color: black;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 300;
+      margin: 0px 30px 20px;
+      padding: 10px;
+      -webkit-box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.75);
+      -moz-box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.75);
+      box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.75);
+    }
+  }
+}
